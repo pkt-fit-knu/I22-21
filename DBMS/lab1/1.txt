@@ -1,0 +1,75 @@
+
+DROP TABLE coments;
+
+DROP TABLE news_users;
+
+DROP TABLE users;
+
+DROP TABLE news;
+
+DROP TABLE category;
+
+CREATE TABLE category
+(
+	cat_id               INTEGER NOT NULL,
+	cat_name             VARCHAR(20) NULL
+);
+
+ALTER TABLE category
+ADD PRIMARY KEY (cat_id);
+
+CREATE TABLE coments
+(
+	com_id               INTEGER NOT NULL,
+	news_id              INTEGER NULL,
+	user_id              INTEGER NULL,
+	us_id                INTEGER NULL,
+	text                 VARCHAR(200) NULL
+);
+
+ALTER TABLE coments
+ADD PRIMARY KEY (com_id);
+
+CREATE TABLE news
+(
+	news_id              INTEGER NOT NULL,
+	title                VARCHAR(20) NULL,
+	text                 VARCHAR(500) NULL,
+	cat_id               INTEGER NULL
+);
+
+ALTER TABLE news
+ADD PRIMARY KEY (news_id);
+
+CREATE TABLE news_users
+(
+	news_id              INTEGER NOT NULL,
+	us_id                INTEGER NOT NULL
+);
+
+ALTER TABLE news_users
+ADD PRIMARY KEY (news_id,us_id);
+
+CREATE TABLE users
+(
+	us_id                INTEGER NOT NULL,
+	name                 VARCHAR(20) NULL
+);
+
+ALTER TABLE users
+ADD PRIMARY KEY (us_id);
+
+ALTER TABLE coments
+ADD CONSTRAINT R_2 FOREIGN KEY (us_id) REFERENCES users (us_id);
+
+ALTER TABLE coments
+ADD CONSTRAINT news_coment FOREIGN KEY (news_id) REFERENCES news (news_id);
+
+ALTER TABLE news
+ADD CONSTRAINT category_news FOREIGN KEY (cat_id) REFERENCES category (cat_id);
+
+ALTER TABLE news_users
+ADD CONSTRAINT news_us FOREIGN KEY (news_id) REFERENCES news (news_id);
+
+ALTER TABLE news_users
+ADD CONSTRAINT us_news FOREIGN KEY (us_id) REFERENCES users (us_id);
