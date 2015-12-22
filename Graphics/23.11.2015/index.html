@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="windows-1251">
+    <title>23.11.2015</title>
+	<style>
+		#zone{
+			border:#000 1px solid;
+		}
+		#img_1{}
+		.circle{
+			width:40px; height:40px; background:#000; position:absolute; left:1px; border-radius: 50%; opacity: 0.5;
+		}
+	</style>
+	<script type="text/javascript" src="9.js"></script>
+
+    <script>
+	
+var n = Animation();
+
+//var ob = ["img_1"];
+//window.onload = start(ob,[0],[100],[1000],[200],5);																			
+	</script>
+
+</head>
+
+<body id="body">
+    <p>23.11.2015</p>
+    <input type="button" value="Start" onClick="n.start()">
+    <input type="button" value="Stop" onClick="n.stop_a()">
+    <div id="img"></div>
+	<!--<div id="img_1" class="circle" style="background:#f0f;"></div>    
+	<div id="img_2" class="circle" style="background:#ff0;"></div>    
+	<div id="img_3" class="circle" style="background:#00f;"></div>    -->
+    <script>
+	 n.read("img",10,200,200,100,10);
+ n.start();
+	</script>
+</body>
+</html>

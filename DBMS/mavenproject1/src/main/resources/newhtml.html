@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Залікова Робота з БД</title>
+        <script src='https://code.jquery.com/jquery-1.11.3.js'></script>
+
+        <script>
+            function onAjaxSuccess_one(data)
+            {
+                $('#table').empty();
+                console.log(data);
+                var tr;
+                tr = $('<tr/>');
+                tr.append("<td>user_id</td>");
+                tr.append("<td>name</td>");
+                tr.append("<td>news_id</td>");
+                $('#table').append(tr);
+
+                for (var i = 0; i < data.length; i++) {
+                    tr = $('<tr/>');
+                    tr.append("<td>" + data[i].user_id + "</td>");
+                    tr.append("<td>" + data[i].name + "</td>");
+                    tr.append("<td>" + data[i].news_id + "</td>");
+                    //tr = $('<tr/>');
+                    $('table#table').append(tr);
+                }
+
+            }
+            function get_one() {
+                jQuery.getJSON(
+                        'http://localhost:4567/hello',
+                        {
+                            parameter: '-1'
+                        },
+                onAjaxSuccess_one
+                        );
+            }
+
+            function get_two() {
+                var id_ = 0;
+                if (document.form.id.value)
+                    id_ = document.form.id.value;
+                jQuery.getJSON(
+                        'http://localhost:4567/hello',
+                        {
+                            parameter: id_
+                        },
+                onAjaxSuccess_one
+                        );
+            }
+            function post() {
+                var post_array = Array();
+                if (document.add_post.user_id.value)
+                    post_array[0] = document.add_post.user_id.value;
+                //if (document.add_post.name.value)
+                //    post_array[1] = document.add_post.name.value;
+                if (document.add_post.news_id.value)
+                    post_array[1] = document.add_post.news_id.value;
+    
+                jQuery.post(
+                        '/post',
+                        {
+                            user_id: post_array[0],
+                            news_id: post_array[1]
+                        }, return_post );//"json");//name: post_array[1],
+            }
+            function return_post(data){
+                console.log(data);
+                document.getElementById("post_return").innerHTML = data.toString();
+            }
+        </script>
+    </head>
+    <body>
+        <div style="width: 100%;">
+            <div style="width:33%; float: left;"><input type="button" value="One Get" onclick="get_one()"></div>
+            <div style="width:33%; float: left;"><form name="form">news_id: <input type="text" name="id"><input type="button" value="One Two" onclick="get_two()"></form></div>
+            <div style="width:33%; float: left;">
+                <form name="add_post">
+                    <table>
+                        <tr>
+                            <td>user_id</td>
+                            <td>news_id</td>
+                        </tr> 
+                        <tr>
+                            <td><input type="text" name="user_id"></td>
+                            <td><input type="text" name="news_id"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="button" value="Post" onclick="post()"></td>
+                        </tr>
+                    </table>
+                </form>
+                <div id="post_return"></div>
+            </div>
+        </div>
+        <table id="table" border="1"></table>
+    </body>
+</html>
