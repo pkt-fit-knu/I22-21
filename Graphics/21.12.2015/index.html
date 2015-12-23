@@ -3,17 +3,6 @@
 <head>
     <meta charset="windows-1251">
     <title>23.11.2015</title>
-	<style>
-		#zone{
-			border:#000 1px solid;
-		}
-		#img_1{}
-		.circle{
-			width:40px; height:40px; background:#000; position:absolute; left:1px; border-radius: 50%; opacity: 0.5;
-		}
-	</style>
-
-
 </head>
 
 <body id="body">
@@ -24,27 +13,19 @@
     <div id="img_tr" style="display:none;"></div>
     <canvas id="myCanvas" width="1349" height="400" style="position:absolute; top:20px; left:20px; z-index:-1;"></canvas>
 
-	<!--<div id="img_1" class="circle" style="background:#f0f;"></div>    
-	<div id="img_2" class="circle" style="background:#ff0;"></div>    
-	<div id="img_3" class="circle" style="background:#00f;"></div>    -->
-    	<script type="text/javascript" src="14_cos.js"></script>
+    	<script type="text/javascript" src="14.js"></script>
 
     <script>
 	function my(){
-		t.read("img",1,100,200,30,10000);
+		t.read("img",1,100,200,30,1000,200,2200,10,1,100);
  	t.start();
 	}
 	
 var t = Animation();
 var b = Animation();
-
-//var ob = ["img_1"];
-//window.onload = start(ob,[0],[100],[1000],[200],5);																			
-
-	t.read("img_tr",1,100,200,30,1000);
+	t.read("img_tr",1,100,200,30,1000,200,2200,10,1,100);
  	t.start();
- 	//b.read("img",1,100,200,30,30);
-	// b.start();
+
 	</script>
 </body>
 </html>
