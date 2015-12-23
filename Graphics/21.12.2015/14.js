@@ -14,8 +14,9 @@ function Animation(){
 	}
 	var theCanvas ;
 	var context;
-	function read_img(id_pole, n,x0,y0,coefficient,tt){
-		t = tt;
+	//	("img",1,100,200,30,1000,200,2200,10,1,10);
+	function read_img(id_pole, n, x0, y0, coefficient, time_coef, h,energy, gravitacion,masa,R){
+		t = time_coef;
 		for(var i = 0; i < n; i++){
 			var id = "object_"+i;
 			document.getElementById(id_pole).innerHTML += "<div id="+id+" class='circle' style='background:"+random_color()+";'></div>";
@@ -25,16 +26,17 @@ function Animation(){
 				y0 : y0,
 				fi : 10,
 				k :1,
-				h0 : 200,
+				h0 : h,
 				e : 10
 				};
 			document.getElementById(id).style.left = x0 + "px";
 			document.getElementById(id).style.top = y0 + "px";
 		}
 		time = coefficient;	
-		radius = 100;
-		g = 10;	
-		m = 1;
+		radius = R;
+		g = gravitacion;	
+		m = masa;
+		E = energy;
 
 		theCanvas = document.getElementById("myCanvas");
 		context = theCanvas.getContext("2d");  
@@ -42,7 +44,6 @@ function Animation(){
 		context.moveTo(x0, y0);
 		var delay;
 		var intervalID;
-		var E = 2200;
 		var t ;
 	}
 			
@@ -86,14 +87,11 @@ function Animation(){
 		
 		
 	}
-	function tr(){
+	function traectoria(){
 		//console.log(obj.style.left);
 		for(var j = 0 in img){
 			var obj = document.getElementById(img[j].id);
-			obj.style.left = img[j].x0 + traektoria(img[j].x0, parseFloat(obj.style.left), j, "x") + "px";	
-			obj.style.top = img[j].y0 + traektoria(img[j].y0,  parseFloat(obj.style.top), j, "y") + "px";
-			c = spead(j);
-			context.lineTo(parseFloat(obj.style.left), parseFloat(obj.style.top));  
+
 			if(radius*Math.sin(img[j].fi/(Math.PI*2*10)*img[j].k+90) > 0){
 				img[j].e = E - m * g * (radius + img[j].y0 - parseFloat(obj.style.top));
 				img[j].fi += spead(j)/30;
@@ -103,11 +101,16 @@ function Animation(){
 				console.log( m * g * (radius + img[j].y0 - parseFloat(obj.style.top)));
 				img[j].fi += spead(j)/30;	
 			}
+
+			obj.style.left = img[j].x0 + traektoria(img[j].x0, parseFloat(obj.style.left), j, "x") + "px";	
+			obj.style.top = img[j].y0 + traektoria(img[j].y0,  parseFloat(obj.style.top), j, "y") + "px";
+			context.lineTo(parseFloat(obj.style.left), parseFloat(obj.style.top));  
+
 		}
 	}
 	function start(){
 		clearInterval(intervalID);
-		intervalID=setInterval(tr,1);
+		intervalID=setInterval(traectoria,1);
 	}
 	function stop_animation(){
 		clearInterval(intervalID);
@@ -115,12 +118,9 @@ function Animation(){
 		context.strokeStyle = 'blue';
 		context.stroke();		
 	}
-		//setInterval(tr, 20);
 	return{
 		read : read_img	,
 		start : start,
 		stop_a : stop_animation
 	};
 }
-
-
