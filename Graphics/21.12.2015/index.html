@@ -4,7 +4,6 @@
     <meta charset="windows-1251">
     <title>23.11.2015</title>
 </head>
-
 <body id="body">
     <p>23.11.2015</p>
     <input type="button" value="Start" onClick="my()">
@@ -12,15 +11,12 @@
     <div id="img"></div>
     <div id="img_tr" style="display:none;"></div>
     <canvas id="myCanvas" width="1349" height="400" style="position:absolute; top:20px; left:20px; z-index:-1;"></canvas>
-
-    	<script type="text/javascript" src="14.js"></script>
-
+    <script type="text/javascript" src="14.js"></script>
     <script>
 	function my(){
 		t.read("img",1,100,200,30,1000,200,2200,10,1,100);
  	t.start();
 	}
-	
 var t = Animation();
 var b = Animation();
 	t.read("img_tr",1,100,200,30,1000,200,2200,10,1,100);
