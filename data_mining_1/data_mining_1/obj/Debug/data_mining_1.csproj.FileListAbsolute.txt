@@ -1,0 +1,6 @@
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\data_mining_1\data_mining_1\bin\Debug\data_mining_1.exe.config
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\data_mining_1\data_mining_1\bin\Debug\data_mining_1.exe
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\data_mining_1\data_mining_1\bin\Debug\data_mining_1.pdb
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\data_mining_1\data_mining_1\obj\Debug\data_mining_1.csprojResolveAssemblyReference.cache
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\data_mining_1\data_mining_1\obj\Debug\data_mining_1.exe
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\data_mining_1\data_mining_1\obj\Debug\data_mining_1.pdb
