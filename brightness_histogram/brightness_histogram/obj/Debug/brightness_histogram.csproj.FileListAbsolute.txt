@@ -1,0 +1,10 @@
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\brightness_histogram\brightness_histogram\bin\Debug\brightness_histogram.exe.config
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\brightness_histogram\brightness_histogram\bin\Debug\brightness_histogram.exe
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\brightness_histogram\brightness_histogram\bin\Debug\brightness_histogram.pdb
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\brightness_histogram\brightness_histogram\obj\Debug\brightness_histogram.csprojResolveAssemblyReference.cache
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\brightness_histogram\brightness_histogram\obj\Debug\brightness_histogram.Properties.Resources.resources
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\brightness_histogram\brightness_histogram\obj\Debug\brightness_histogram.csproj.GenerateResource.Cache
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\brightness_histogram\brightness_histogram\obj\Debug\brightness_histogram.exe
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\brightness_histogram\brightness_histogram\obj\Debug\brightness_histogram.pdb
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\brightness_histogram\brightness_histogram\obj\Debug\brightness_histogram.Form1.resources
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\brightness_histogram\brightness_histogram\bin\Debug\image.png
