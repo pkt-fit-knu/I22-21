@@ -1,0 +1,21 @@
+c:\users\meteo\documents\visual studio 2015\Projects\kNN\kNN\bin\Debug\kNN.exe.config
+c:\users\meteo\documents\visual studio 2015\Projects\kNN\kNN\bin\Debug\kNN.exe
+c:\users\meteo\documents\visual studio 2015\Projects\kNN\kNN\bin\Debug\kNN.pdb
+c:\users\meteo\documents\visual studio 2015\Projects\kNN\kNN\obj\Debug\kNN.csprojResolveAssemblyReference.cache
+c:\users\meteo\documents\visual studio 2015\Projects\kNN\kNN\obj\Debug\kNN.exe
+c:\users\meteo\documents\visual studio 2015\Projects\kNN\kNN\obj\Debug\kNN.pdb
+c:\users\meteo\documents\visual studio 2015\Projects\kNN\kNN\bin\Debug\t1.txt
+C:\Users\Meteo\Dropbox\Projects\kNN\kNN\bin\Debug\kNN.exe.config
+C:\Users\Meteo\Dropbox\Projects\kNN\kNN\obj\Debug\kNN.exe
+C:\Users\Meteo\Dropbox\Projects\kNN\kNN\obj\Debug\kNN.pdb
+C:\Users\Meteo\Dropbox\Projects\kNN\kNN\bin\Debug\kNN.exe
+C:\Users\Meteo\Dropbox\Projects\kNN\kNN\bin\Debug\kNN.pdb
+C:\Users\Meteo\Dropbox\Projects\kNN\kNN\obj\Debug\kNN.csprojResolveAssemblyReference.cache
+C:\Users\Meteo\Dropbox\Projects\kNN\kNN\bin\Debug\posts\1t1.txt
+C:\Users\Meteo\Dropbox\Projects\kNN\kNN\bin\Debug\posts\1t2.txt
+C:\Users\Meteo\Dropbox\Projects\kNN\kNN\bin\Debug\posts\2t1.txt
+C:\Users\Meteo\Dropbox\Projects\kNN\kNN\bin\Debug\posts\2t2.txt
+C:\Users\Meteo\Dropbox\Projects\kNN\kNN\bin\Debug\posts\3t1.txt
+C:\Users\Meteo\Dropbox\Projects\kNN\kNN\bin\Debug\posts\3t2.txt
+C:\Users\Meteo\Dropbox\Projects\kNN\kNN\bin\Debug\posts\t1.txt
+C:\Users\Meteo\Dropbox\Projects\kNN\kNN\bin\Debug\posts\t2.txt
