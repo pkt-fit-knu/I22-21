@@ -1,0 +1,12 @@
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\divide_and_conquer\divide_and_conquer\bin\Debug\divide_and_conquer.exe.config
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\divide_and_conquer\divide_and_conquer\bin\Debug\divide_and_conquer.exe
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\divide_and_conquer\divide_and_conquer\bin\Debug\divide_and_conquer.pdb
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\divide_and_conquer\divide_and_conquer\obj\Debug\divide_and_conquer.csprojResolveAssemblyReference.cache
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\divide_and_conquer\divide_and_conquer\obj\Debug\divide_and_conquer.exe
+C:\Users\Дмитро\Documents\Visual Studio 2015\Projects\divide_and_conquer\divide_and_conquer\obj\Debug\divide_and_conquer.pdb
+D:\doc\Visual Studio 2015\Projects\divide_and_conquer\divide_and_conquer\bin\Debug\divide_and_conquer.exe.config
+D:\doc\Visual Studio 2015\Projects\divide_and_conquer\divide_and_conquer\obj\Debug\divide_and_conquer.exe
+D:\doc\Visual Studio 2015\Projects\divide_and_conquer\divide_and_conquer\obj\Debug\divide_and_conquer.pdb
+D:\doc\Visual Studio 2015\Projects\divide_and_conquer\divide_and_conquer\bin\Debug\divide_and_conquer.exe
+D:\doc\Visual Studio 2015\Projects\divide_and_conquer\divide_and_conquer\bin\Debug\divide_and_conquer.pdb
+D:\doc\Visual Studio 2015\Projects\divide_and_conquer\divide_and_conquer\obj\Debug\divide_and_conquer.csprojResolveAssemblyReference.cache
